@@ -33,3 +33,23 @@ Key填刚刚拷贝的公钥内容
 ```
 
 这样就可以下载需要SSH的工程了。
+
+
+
+关于用户名和邮箱的命令
+
+```
+查看当前库的用户名和邮箱命令：
+$ git config user.name
+$ git config user.email
+
+设置当前库的用户名和密码
+$ git config user.name "chen"
+$ git config user.email "xxx@163.com"
+ 
+
+设置全局的用户名和密码
+$ git config --global user.name "chen"
+$ git config --global user.email "xxxx@qq.com"
+```
+
