@@ -1,0 +1,29 @@
+---
+layout: mypost
+title: zsh: command not found: mysql解决方案
+date:   2020-01-15 20:26:00
+categories: [MySQL]
+---
+
+# zsh: command not found: mysql解决方案
+
+终端使用mysql出现该提示时，解决方案如下：
+
+1. 在你的Mac终端,输入： cd ~会进入~文件夹
+2. 然后输入：touch .bash_profile回车执行后，
+3. 再输入：open -e .bash_profile这时候会出现一个TextEdit，如果以前没有配置过环境变量，呈现在你眼前的就是一个空白文档，你需要在这个空白文档里输入：export PATH=$PATH:/usr/local/mysql/bin然后关闭这个TextEdit
+4. 继续回到终端面板，输入：**source ~/.bash_profile**
+
+
+
+但是这样，每次重启终端后都需要再次执行**source ~/.bash_profile**，所以还需要加上下面几步：
+
+1. $ open .zshrc
+
+2. 在文档中加上一行：
+
+   > alias mysql=/usr/local/mysql/bin/mysql
+
+3. source ~/.zshrc
+
+这样就完成了。

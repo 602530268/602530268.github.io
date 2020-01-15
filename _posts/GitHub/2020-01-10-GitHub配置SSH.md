@@ -2,7 +2,7 @@
 layout: mypost
 title: GitHub配置SSH
 date:   2020-01-10 12:03:00
-categories: [iOS, 功能块]
+categories: [GitHub]
 ---
 
 
