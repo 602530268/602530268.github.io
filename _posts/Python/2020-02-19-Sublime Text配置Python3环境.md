@@ -15,7 +15,8 @@ Sublime Text - Tools - Build System - New Build System
 {
       "cmd": ["/Library/Frameworks/Python.framework/Versions/3.6/bin/python3", "-u", "$file"],
       "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-      "selector": "source.python"
+      "selector": "source.python",
+      "env": {"PYTHONIOENCODING":"utf8"}
 }
 ```
 
