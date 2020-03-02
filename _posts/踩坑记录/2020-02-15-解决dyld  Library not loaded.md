@@ -1,6 +1,6 @@
 ---
 layout: mypost
-title: 解决dyld: Library not loaded
+title: 解决dyld Library not loaded
 date:   2020-02-15 22:19:00
 categories: [iOS, 踩坑]
 ---
